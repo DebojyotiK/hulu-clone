@@ -1,0 +1,56 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.subcription-section {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2.3;
+  overflow: hidden;
+}
+
+.subscription-section-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.categories-section {
+  background-color: black;
+  height: 800px;
+  width: 100%;
+}
+
+.events-section {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.8;
+  overflow: hidden;
+}
+
+.events-section-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.plan-section {
+  background-color: black;
+  height: 800px;
+  width: 100%;
+}
+
+.footer-section {
+  background-color: #e8eaed;
+  height: 400px;
+  width: 100%;
+}
