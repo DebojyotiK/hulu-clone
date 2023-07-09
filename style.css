@@ -182,6 +182,7 @@ body {
   padding-bottom: 12px;
   border-bottom: 5px solid white;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .tab-item-inactive {
@@ -192,6 +193,7 @@ body {
   color: hsl(0deg 0% 100% / 40%);
   padding-bottom: 12px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .sports-sponsors {
