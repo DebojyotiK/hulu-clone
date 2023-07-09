@@ -1,7 +1,9 @@
 body {
   padding: 0px;
   margin: 0px;
-  font-family: 'Graphik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Graphik", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 .subcription-section {
@@ -21,7 +23,7 @@ body {
   object-fit: cover;
 }
 
-.subcription-plan-view{
+.subcription-plan-view {
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -74,6 +76,8 @@ body {
   left: 0px;
   top: 0px;
   text-align: center;
+  box-sizing: border-box;
+  padding-top: 100px;
 }
 
 .subscription-plan-container {
@@ -86,28 +90,65 @@ body {
 
 .hulu-logo {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 40px;
+  top: 24px;
 }
 
 .log-in-btn {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 40px;
+  top: 24px;
+  background-color: transparent;
+  border: none;
+  color: #a8afbd;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 
 .categories-section {
   background-color: black;
-  height: 800px;
   width: 100%;
   text-align: center;
   padding-top: 50px;
   color: white;
-}
-
-.category-section-text-card{
   display: flex;
   flex-direction: column;
+}
+
+.categories-section>:first-child{
+  margin-top: 64px;
+}
+
+.categories-section>:nth-child(2){
+  margin-top: 40px;
+}
+
+.categories-section>:nth-child(3){
+  margin-top: 200px;
+}
+
+.categories-section > h4{
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46;
+  text-transform: none;
+  color: hsl(0deg 0% 100% / 60%);
+  width: 50%;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.category-section-text-card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0px auto;
 }
 
 .events-column {
@@ -196,10 +237,185 @@ body {
   flex: 1;
 }
 
-.plans-toggle{
+.plans-toggle {
   height: 100px;
 }
 
-.plans-view-card{
+.plans-view-card {
   flex-direction: column;
+}
+
+.category-section-text-card > :first-child {
+  font-size: 14px;
+  color: #00ed82;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.category-section-text-card > :nth-child(2) {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  margin: 0px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.category-section-text-card > :last-child {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.32;
+  letter-spacing: 0;
+  margin: 0px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 12px 80px;
+  align-items: center;
+}
+
+.carousel-item {
+  transition: 0.5s;
+  flex: 1;
+  border-radius: 10px;
+  border: 4px solid #ffffff00;
+  position: relative;
+}
+
+.carousel-item-backdrop {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.357);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.carousel-iten-overlay-text {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+}
+
+.carousel-iten-overlay-text > h1 {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.24;
+  letter-spacing: 0;
+  margin-top: 12px;
+}
+
+.carousel-iten-overlay-text > h2 {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.36;
+  letter-spacing: 0;
+}
+
+.carousel-item:hover {
+  border: 4px solid #ffffff81;
+}
+
+.carousel-item:hover > .carousel-item-backdrop {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.carousel-item > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.top-spacing-medium {
+  height: 200px;
+}
+
+.subcription-plan-view > :first-child {
+  color: #00ed82;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.subcription-plan-view > :nth-child(3) {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.24;
+  text-transform: none;
+  margin-top: 16px;
+}
+
+.subcription-plan-view > img {
+  height: 64px;
+  object-fit: contain;
+  margin-top: 32px;
+}
+
+.subcription-plan-view > button {
+  transition: 0.4s;
+  background-color: #00ed82;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.subcription-plan-view > button:hover {
+  opacity: 0.5;
+}
+
+.tnc-apply-text {
+  padding: 0;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.signup-hulu-text {
+  padding: 0;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  font-size: 16px;
+  margin-top: 32px;
+}
+
+.view-channels-button {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.dropdown-button{
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 100px;
 }
