@@ -220,7 +220,6 @@ body {
 .sticky-plan-header {
   width: 100%;
   flex-basis: 1;
-  height: 100px;
   margin-top: 44px;
   border-bottom: 1px solid #575759;
   border-top: 1px solid #575759;
@@ -260,6 +259,7 @@ body {
   align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
+  gap: 12px;
 }
 
 .plans-toggle {
@@ -267,6 +267,7 @@ body {
 }
 
 .plans-view-card {
+  display: flex;
   flex-direction: column;
 }
 
@@ -631,4 +632,63 @@ body {
   color: #586174;
   text-decoration: none;
   margin: 0px;
+}
+
+
+.most-popular-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.most-popular-container > h1{
+  background-color: #1ce783;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 100px;
+}
+
+.hide{
+  opacity: 0;
+}
+
+.plans-view-card >:nth-child(2){
+    color: #bec0c2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.plans-view-card >:nth-child(3){
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin:0px;
+  margin-bottom: 20px;
+}
+
+.plans-view-card >:nth-child(4){
+  transition: 0.4s;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+}
+
+.plans-view-card >:nth-child(4):hover{
+  opacity: 0.5;
 }
