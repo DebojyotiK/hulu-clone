@@ -237,13 +237,15 @@ body {
 .channels {
   display: flex;
   flex-direction: row;
+  gap: 20px;
+  margin: 20px 0px;
 }
 
 .footer-texts {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 25px;
 }
 
 .plan-feature-view {
@@ -587,9 +589,10 @@ body {
   border-bottom: 1px solid #575759;
   justify-content: center;
   margin-bottom: 44px;
+  cursor: pointer;
 }
 
-.add-on-button-text{
+.add-on-button-text {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -606,7 +609,26 @@ body {
   margin: 0px;
 }
 
-.add-on-button-text > img{
+.add-on-button-text > img {
   height: 13px;
   padding: 0px;
+}
+
+.footer-texts > h3 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.44;
+  letter-spacing: 0;
+  color: #586174;
+  margin: 0px;
+}
+
+.footer-texts > a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.44;
+  letter-spacing: 0;
+  color: #586174;
+  text-decoration: none;
+  margin: 0px;
 }
