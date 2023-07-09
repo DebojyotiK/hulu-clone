@@ -44,9 +44,9 @@ body {
   flex-direction: column;
 }
 
-.footer-list-view-container{
-    display: flex;
-    flex-direction: row;
+.footer-list-view-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-list-view {
@@ -151,9 +151,34 @@ body {
   flex-direction: row;
 }
 
-.footer-texts{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 100px;
+.footer-texts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.plan-feature-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-feature-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.plan-feature-header > :first-child {
+  background-color: red;
+  flex: 2;
+}
+
+.plan-feature-header > :nth-child(2) {
+  background-color: burlywood;
+  flex: 1;
+}
+
+.plan-feature-header > :last-child {
+  background-color: white;
+  flex: 1;
 }
