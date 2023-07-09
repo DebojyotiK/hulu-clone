@@ -182,3 +182,11 @@ body {
   background-color: white;
   flex: 1;
 }
+
+.plans-toggle{
+  height: 100px;
+}
+
+.plans-view-card{
+  flex-direction: column;
+}
