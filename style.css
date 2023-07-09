@@ -221,7 +221,9 @@ body {
   width: 100%;
   flex-basis: 1;
   height: 100px;
-  background-color: red;
+  margin-top: 44px;
+  border-bottom: 1px solid #575759;
+  border-top: 1px solid #575759;
 }
 
 .seperator {
@@ -230,7 +232,6 @@ body {
   width: 100%;
   flex-basis: 1;
   margin-top: 40px;
-  
 }
 
 .channels {
@@ -253,21 +254,10 @@ body {
 .plan-feature-header {
   display: flex;
   flex-direction: row;
-}
-
-.plan-feature-header > :first-child {
-  background-color: red;
-  flex: 2;
-}
-
-.plan-feature-header > :nth-child(2) {
-  background-color: burlywood;
-  flex: 1;
-}
-
-.plan-feature-header > :last-child {
-  background-color: white;
-  flex: 1;
+  border-bottom: 1px solid #575759;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .plans-toggle {
@@ -524,4 +514,99 @@ body {
   line-height: 1.4;
   letter-spacing: 0;
   margin: 0px;
+}
+
+.plans-column {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.plans-column > h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  margin: 0px;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.plans-column > h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.32;
+  text-transform: none;
+  margin: 0px;
+}
+
+.plan-feature-header > h2 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.36;
+  letter-spacing: 0;
+  color: white;
+  text-align: left;
+  margin: 0px;
+}
+
+.plan-feature-header > img {
+  height: 16px;
+}
+
+.plan-feature-header > :first-child {
+  flex: 2;
+}
+
+.plan-feature-header > :nth-child(2) {
+  flex: 1;
+  text-align: center;
+}
+
+.plan-feature-header > :last-child {
+  flex: 1;
+  text-align: center;
+}
+
+.plan-feature-view > h4 {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46;
+  text-transform: none;
+  color: white;
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+.add-on-button {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px;
+  border-top: 1px solid #575759;
+  border-bottom: 1px solid #575759;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.add-on-button-text{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 12px;
+}
+
+.add-on-button-text > h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: 0;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+.add-on-button-text > img{
+  height: 13px;
+  padding: 0px;
 }
