@@ -264,6 +264,35 @@ body {
 
 .plans-toggle {
   height: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.plan-mini-view {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+}
+
+.plan-mini-view > h2 {
+  text-align: left;
+  padding: 0;
+  font: inherit;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.hulu-disney-mini-logo {
+  height: 32px;
+  object-fit: contain;
+}
+
+.hulu-mini-logo {
+  height: 20px;
+  margin-top: 12px;
+  object-fit: contain;
 }
 
 .plans-view-card {
@@ -634,14 +663,13 @@ body {
   margin: 0px;
 }
 
-
-.most-popular-container{
+.most-popular-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.most-popular-container > h1{
+.most-popular-container > h1 {
   background-color: #1ce783;
   padding: 10px 20px;
   font-size: 10px;
@@ -653,31 +681,31 @@ body {
   border-radius: 100px;
 }
 
-.hide{
+.hide {
   opacity: 0;
 }
 
-.plans-view-card >:nth-child(2){
-    color: #bec0c2;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
+.plans-view-card > :nth-child(2) {
+  color: #bec0c2;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 
-.plans-view-card >:nth-child(3){
+.plans-view-card > :nth-child(3) {
   color: white;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  margin:0px;
+  margin: 0px;
   margin-bottom: 20px;
 }
 
-.plans-view-card >:nth-child(4){
+.plans-view-card > :nth-child(4) {
   transition: 0.4s;
   background-color: white;
   border: none;
@@ -689,6 +717,20 @@ body {
   color: black;
 }
 
-.plans-view-card >:nth-child(4):hover{
+.plans-view-card > :nth-child(4):hover {
   opacity: 0.5;
+}
+
+.switch {
+  width: 60px;
+  border-radius: 15px;
+  height: 30px;
+  background-color: #404956;
+}
+
+.switch-round {
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+  background-color: white;
 }
