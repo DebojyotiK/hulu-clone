@@ -473,6 +473,20 @@ body {
   display: block;
   margin: 0px auto;
   margin-bottom: 100px;
+  animation-duration: 1.5s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  height: 10px;
+  animation-timing-function: ease-in;
+}
+
+@keyframes bounce {
+  0% {
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .events-column > h1 {
